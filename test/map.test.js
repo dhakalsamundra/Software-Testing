@@ -33,4 +33,8 @@ describe("Use in the product of array and return the array result of product.", 
       map(arrayValue, invalidFunction);
     }).to.throw(TypeError);
   });
+  
+  it(" map with no arguments throws error", () => {
+    expect(function(){ map() }).to.throw(TypeError);
+});
 });
