@@ -27,7 +27,7 @@ it("adding of the string throws a type error", () => {
   expect(() =>{ add("Degree Celcius", 0) }).to.throw(TypeError);
 })
 
-it("ADD25: add positive integer to negative float, returns float with correct sign", () => {
+it("add positive integer to negative float, returns float with correct sign", () => {
   expect(add(11, -2.65)).to.equal(8.35);
 });
 });
