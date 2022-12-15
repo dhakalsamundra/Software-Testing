@@ -15,3 +15,7 @@ Individuals who remove or modify the license file will also carry the consequenc
 The use of istanbul is from this medium blog. If someone wants to try have a look on this [istanbul](https://medium.com/walkme-engineering/measure-your-nodejs-code-coverage-using-istanbul-82b129c81ae9).
 
 The use of **--maxWorkers** is more descriptive in the [Jest](https://jestjs.io/docs/cli#--maxworkersnumstring:~:text=Alias%3A%20%2Dw,most%20use%2Dcases.)documents.
+
+##Coverage
+.. image:: https://coveralls.io/repos/github/dhakalsamundra/Software-Testing/badge.svg?branch=main
+:target: https://coveralls.io/github/dhakalsamundra/Software-Testing?branch=main
