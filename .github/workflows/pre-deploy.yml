@@ -29,7 +29,7 @@ jobs:
     - name: Publish to coveralls.io
       uses: coverallsapp/github-action@v1.1.2
       with:
-        github-token: ${{ github.REPO_TOKEN }}
+        github-token: ${{ github.token }}
     - run: npm ci
     #- run: npm run build --if-present
     - run: |
