@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha --reporter mochawesome",
-    "coverage": "c8 mocha"
+    "coverage": "c8 mocha | coveralls"
   },
   "author": "",
   "license": "MIT",
