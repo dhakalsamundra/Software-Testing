@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha --reporter mochawesome",
+    "test": "mocha --coverage && coveralls < coverage/lcov.info reporter mochawesome",
     "coverage": "c8 mocha"
   },
   "author": "",
