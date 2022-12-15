@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha test/add.test.js --reporter mochawesome",
-    "test:coveralls": "yarn test"
+    "test:coveralls": "yarn test --coverage && coveralls < coverage"
   },
   "author": "",
   "license": "MIT",
