@@ -7,17 +7,17 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha test/add.test.js --reporter mochawesome",
-    "test:coveralls": "yarn test --coverage && coveralls < coverage/lcov.info"
+    "test:coveralls": "yarn test --coverage | coveralls"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "coveralls": "^3.1.1"
   },
   "devDependencies": {
     "c8": "^7.10.0",
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
-    "mochawesome": "^7.0.1"
+    "mochawesome": "^7.0.1",
+    "coveralls": "^3.1.1"
   }
 }
