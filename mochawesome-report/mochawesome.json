@@ -5,9 +5,9 @@
     "passes": 6,
     "pending": 0,
     "failures": 0,
-    "start": "2022-12-15T18:40:49.007Z",
-    "end": "2022-12-15T18:40:49.015Z",
-    "duration": 8,
+    "start": "2022-12-15T19:05:38.697Z",
+    "end": "2022-12-15T19:05:38.708Z",
+    "duration": 11,
     "testsRegistered": 6,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "82037682-ef17-484d-a7e5-03da35c0307b",
+      "uuid": "f3c5e9a9-a80b-4680-8475-24df9ff7a87b",
       "title": "",
       "fullFile": "/Users/samundra.dhakal/Desktop/personal/Uni/SoftwareTesting/test/add.test.js",
       "file": "/test/add.test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2ecf253f-01b2-46cd-b05c-fe50e74e841d",
+          "uuid": "ec0f6613-9975-43f7-80aa-2789c95f86f4",
           "title": "Add functionality ",
           "fullFile": "/Users/samundra.dhakal/Desktop/personal/Uni/SoftwareTesting/test/add.test.js",
           "file": "/test/add.test.js",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "expect(add(10,11)).to.equal(21);",
               "err": {},
-              "uuid": "c6b69a58-086a-4780-8864-4fcce0c3d0b9",
-              "parentUUID": "2ecf253f-01b2-46cd-b05c-fe50e74e841d",
+              "uuid": "0acc43e0-6c99-4544-a61c-cb3f22dfa631",
+              "parentUUID": "ec0f6613-9975-43f7-80aa-2789c95f86f4",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "expect(add(7,-3)).to.equal(4);",
               "err": {},
-              "uuid": "f53e22b6-0b56-45bf-8a6c-edbb0bdebac8",
-              "parentUUID": "2ecf253f-01b2-46cd-b05c-fe50e74e841d",
+              "uuid": "9b8f10e1-8531-4223-9f56-fcb02f3a2f56",
+              "parentUUID": "ec0f6613-9975-43f7-80aa-2789c95f86f4",
               "isHook": false,
               "skipped": false
             },
@@ -83,8 +83,8 @@
               "context": null,
               "code": "expect(add(0.00009,0.001)).to.equal(0.00109);",
               "err": {},
-              "uuid": "24526050-cb24-42b1-8630-7a36fb93480d",
-              "parentUUID": "2ecf253f-01b2-46cd-b05c-fe50e74e841d",
+              "uuid": "05aaedd0-a60f-40c3-a9b3-8c86902bc6de",
+              "parentUUID": "ec0f6613-9975-43f7-80aa-2789c95f86f4",
               "isHook": false,
               "skipped": false
             },
@@ -101,8 +101,8 @@
               "context": null,
               "code": "expect(add(1.05, -1.05)).to.equal(0);",
               "err": {},
-              "uuid": "383f090b-907d-4779-a628-8ddc11d96042",
-              "parentUUID": "2ecf253f-01b2-46cd-b05c-fe50e74e841d",
+              "uuid": "c4b78271-ff7b-42b1-b3d8-2e37e6533224",
+              "parentUUID": "ec0f6613-9975-43f7-80aa-2789c95f86f4",
               "isHook": false,
               "skipped": false
             },
@@ -119,8 +119,8 @@
               "context": null,
               "code": "expect(add()).to.equal(0);",
               "err": {},
-              "uuid": "fbfb1490-d470-4f78-8d6d-4e75712010fd",
-              "parentUUID": "2ecf253f-01b2-46cd-b05c-fe50e74e841d",
+              "uuid": "39edbbf8-da46-4481-b75f-9731356cd2f9",
+              "parentUUID": "ec0f6613-9975-43f7-80aa-2789c95f86f4",
               "isHook": false,
               "skipped": false
             },
@@ -137,20 +137,20 @@
               "context": null,
               "code": "expect(add(11, -2.65)).to.equal(8.35);",
               "err": {},
-              "uuid": "bef47f62-9f5c-4af5-af79-2fa19cd28ea2",
-              "parentUUID": "2ecf253f-01b2-46cd-b05c-fe50e74e841d",
+              "uuid": "84e2073e-7b98-4434-bd28-1cf7ad142644",
+              "parentUUID": "ec0f6613-9975-43f7-80aa-2789c95f86f4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c6b69a58-086a-4780-8864-4fcce0c3d0b9",
-            "f53e22b6-0b56-45bf-8a6c-edbb0bdebac8",
-            "24526050-cb24-42b1-8630-7a36fb93480d",
-            "383f090b-907d-4779-a628-8ddc11d96042",
-            "fbfb1490-d470-4f78-8d6d-4e75712010fd",
-            "bef47f62-9f5c-4af5-af79-2fa19cd28ea2"
+            "0acc43e0-6c99-4544-a61c-cb3f22dfa631",
+            "9b8f10e1-8531-4223-9f56-fcb02f3a2f56",
+            "05aaedd0-a60f-40c3-a9b3-8c86902bc6de",
+            "c4b78271-ff7b-42b1-b3d8-2e37e6533224",
+            "39edbbf8-da46-4481-b75f-9731356cd2f9",
+            "84e2073e-7b98-4434-bd28-1cf7ad142644"
           ],
           "failures": [],
           "pending": [],
