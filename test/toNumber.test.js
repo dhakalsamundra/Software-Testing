@@ -37,4 +37,12 @@ describe("Convert to number", () => {
   it("Empty input return NaN", () => {
     expect(toNumber()).to.deep.eq(NaN);
   });
+
+  it("array as an input returns NaN", () => {
+    expect(toNumber([1, 2, 3])).to.deep.equal(NaN);
+});
+
+it("Bad signed hex as an input returns NaN", () => {
+  expect(toNumber('-0x8BADF00D')).to.deep.equal(NaN);
+});
 });
