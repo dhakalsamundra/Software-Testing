@@ -6,18 +6,19 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "test": "mocha --reporter mochawesome",
-    "coverage": "c8 mocha | coveralls"
+    "test": "mocha \"test/add.test.js\"",
+    "cover:unit": "nyc --silent yarn test",
+    "cover:report": "nyc report --reporter=lcov --reporter=text --report-dir='./jscoverage'",
+    "cover:reporthtml": "nyc report --reporter=html --report-dir='./jscoverage'",
+    "test:coverage": "yarn cover:unit && yarn cover:report",
+    "test:coveragehtml": "yarn cover:unit && yarn cover:reporthtml"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "c8": "^7.10.0",
     "chai": "^4.3.7",
-    "coveralls": "^3.1.1",
     "mocha": "^10.2.0",
-    "mochawesome": "^7.0.1"
+    "nyc": "^15.1.0"
   }
 }
