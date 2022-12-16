@@ -5,17 +5,22 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
     "test": "mocha",
-    "coverage": "nyc --reporter=text yarn test"
+    "test:cover": "babel-node node_modules/.bin/babel-istanbul cover _mocha test/filter.test.js"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "mochawesome": "^7.0.1",
-    "nyc": "^15.1.0"
+    "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-istanbul": "^0.5.8",
+    "babel-plugin-syntax-async-functions": "^6.1.18",
+    "babel-plugin-transform-regenerator": "^6.2.0",
+    "babel-polyfill": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "mocha-lcov-reporter": "^1.0.0"
   }
 }
