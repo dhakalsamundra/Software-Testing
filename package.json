@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "coverage": "babel-node node_modules/.bin/babel-istanbul cover _mocha test/*.test.js"
+    "coverage": "babel-node node_modules/.bin/babel-istanbul cover _mocha test/*.test.js",
+    "individual:coverage": "babel-node node_modules/.bin/babel-istanbul cover _mocha test/add.test.js"
   },
   "author": "",
   "license": "MIT",
