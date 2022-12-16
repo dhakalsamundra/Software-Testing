@@ -38,7 +38,7 @@ jobs:
           flag-name: ${{matrix.os}}-node-${{ matrix.node }}
           parallel: true
       
-    finish:
+  finish:
      needs: test
      runs-on: ubuntu-latest
      steps:
