@@ -6,7 +6,15 @@ describe("Use for searching/filtering the products", () => {
   const invalidPredicate = "Iphone 14";
   const arrayValue = [true, 1400, "Apple Product"];
   const stringValue = 1;
-
+  const shoppongCart = [
+    { cloth: 'pant', available: true },
+    { cloth: 'belt', available: true },
+    { cloth: 'shirt', available: false },
+  ]
+const filteredArray = [
+    { cloth: 'pant', available: true },
+    { cloth: 'belt', available: true },
+  ]
   it("Filter the full shopping cart with an invalid predicate throws error",  () => {
       expect(function(){ filter(arrayValue, invalidPredicate) }).to.throw(TypeError);
   });
@@ -20,6 +28,10 @@ describe("Use for searching/filtering the products", () => {
       expect(function(){ filter(arrayValue, invalidPredicate) }).to.deep.eq(1);
     } catch (e){}
   });
+
+  it("Filter the product in the shopping cart", () => {
+    expect(filter(shoppongCart,({available}) => available)).to.deep.eq(filteredArray);
+})
 
   it("Filtering without arg throws error", () => {
       expect((()=>{ filter()})).to.throw(TypeError);
